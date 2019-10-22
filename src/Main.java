@@ -1,6 +1,6 @@
-import javax.swing.JFrame;
+import gui.BoardFrame;
 
-import window.BoardFrame;
+import javax.swing.JFrame;
  
 public class Main {
 	public static void main(String[] args) {

@@ -5,4 +5,4 @@
  * @author Kotori
  *
  */
-package window;
+package gui;

@@ -1,4 +1,4 @@
-package window;
+package gui;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -11,8 +11,9 @@ import javax.swing.JPanel;
 public class Board extends JPanel {
 	Graphics2D g2;
 	Ellipse2D e;
+	
 	public Board(){
-	 
+		
 	}
 	public void paintComponent(Graphics g){
 		//在这里描绘空棋盘
@@ -28,6 +29,7 @@ public class Board extends JPanel {
 			Line2D line =new Line2D.Double(50,50+crossSize*i,50+crossSize*14,50+crossSize*i);
 			g2.draw(line);
 		}
+		
 		int pointSize=6;	//五个小圆点的size（棋盘上D12，L12，D4，L4，H8这5个点）
 		g.fillOval(3*crossSize+50-pointSize/2, 3*crossSize+50-pointSize/2, pointSize, pointSize);//D12
 		g.fillOval(11*crossSize+50-pointSize/2, 3*crossSize+50-pointSize/2, pointSize, pointSize);//L12
@@ -48,7 +50,6 @@ public class Board extends JPanel {
 			acrossMark.setLocation(20, crossSize*i);
 			add(acrossMark);
 		}
-		
 	}
 	 
 }
